@@ -1,4 +1,4 @@
-from mnist_autoencoder import MNIST_Autoencoder, display_reconstruction_images
+from mnist_autoencoder import MNISTAutoencoder, display_reconstruction_images
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import load_model
 import numpy as np
@@ -16,7 +16,7 @@ if not os.path.exists("models"):
     os.mkdir("models")
 
 encoding_dim = 64
-autoencoder = MNIST_Autoencoder(encoder_dim=encoding_dim)
+autoencoder = MNISTAutoencoder(encoder_dim=encoding_dim)
 model_save_path = os.path.join("models", "mnist_autoencoder.tf")
 if os.path.exists(model_save_path):
     autoencoder = load_model(model_save_path)
