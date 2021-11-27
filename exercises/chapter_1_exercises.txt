@@ -1,0 +1,23 @@
+1. Name three different activation functions. Remember, Google is your friend.
+- Adam, Nadam, RMSProp, Sigmoid, ReLu, LeakyReLu. Those are all that I can think of off the top of my head.
+2. What is the purpose of a bias?
+- It gives the model more flexibility to fit the data accordingly.
+3. What would you expect to happen if you lowered the amount of epochs in one of the chapter examples?
+- The model would have more bias, meaning it is less fit to the data than with a higher amount of epochs.
+- Lowering the amount of epochs could be good if the model is overfitting the data.
+4. What is the purpose of backpropagation?
+- To adjust the weights in the direction of where it leads to lower cost (better model).
+5. Explain the purpose of the Cost function
+- The Cost function gives a numerical to how badly the model is doing. The higher the number, the worse it's doing.
+6. What happens when you lower or raise the number of encoding dimensions in the Keras MNIST example?
+- Lowering the encoder dimensions reduces the quality of the output images, but heavily reduces the space needed to store them. Raising does the opposite.
+7. What is the name of the layer type we feed into?
+- The Input layer (Determines the shape of the Input)
+8. What happens when you increase or decrease the batch size?
+- It's the difference between batch gradient descent and stochastic gradient descent.
+  Batch gradient descent uses the entire training set to determine the gradients to adjust the weights.
+  Stochastic gradient descent uses only a single example and then adjusts the weights accordingly.
+9. What is the shape of the input Tensor for the Keras example? Hint: we already have a print statement showing this.
+- Usually image datasets have the shape: (batch_size, height, width, channels). For this example, it was (num_examples, 784)
+10. In the last example, how many MNIST samples do we train with and test with?
+- 60,000 training examples and 10,000 testing examples.
